@@ -1,8 +1,6 @@
-import 'package:mobile_app/page_answer/answer_portal.dart';
 import 'package:flutter/material.dart';
-import 'package:mobile_app/from_simple.dart';
-import 'package:mobile_app/registrasion_from.dart';
-import 'package:mobile_app/Air_Quality_Index.dart';
+
+import 'screen/product_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,11 +8,13 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: MyAir(),
+      title: 'Product App',
+      theme: ThemeData(primarySwatch: Colors.purple),
+      home: const ProductListScreen(),
     );
   }
 }
