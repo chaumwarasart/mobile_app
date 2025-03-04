@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
-import '/api_product.dart';
-import '/product.dart';
+import '../api_product.dart';
+import '../product.dart';
 import 'product_form.dart';
 
 class ProductListScreen extends StatefulWidget {

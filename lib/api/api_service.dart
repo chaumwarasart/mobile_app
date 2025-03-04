@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
+import 'package:mobile_app/homework3/product.dart';
 
 class ApiService {
   static const String baseUrl = "http://10.0.2.2:8001/products";
@@ -74,4 +75,6 @@ class ApiService {
       print("Error: $e");
     }
   }
+
+  static addProduct(Product product) {}
 }
